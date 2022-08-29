@@ -4,6 +4,8 @@ import H2Section from '../Others/H2Section';
 import PSection from '../Others/PSection';
 import Project from './Project';
 import arrayProjects from '../../constants/arrayProjects';
+import breakpoints from '../../constants/breakpoints';
+const {desktop}=breakpoints
 
 const Projects = () => {
   return (
@@ -37,6 +39,10 @@ const ProjectsWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
+
+  @media screen and (min-width: ${desktop} ) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 export default Projects;

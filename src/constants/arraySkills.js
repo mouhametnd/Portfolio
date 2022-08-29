@@ -11,7 +11,9 @@ import gitIcon from '../assets/icons/git.webp';
 import tsIcon from '../assets/icons/ts.png';
 import tailwindIcon from '../assets/icons/tailwind.webp';
 import npmIcon from '../assets/icons/npm.webp';
-import axiosIcon from '../assets/icons/axios.webp';
+import angularIcon from '../assets/icons/angular.ico';
+import rxjsIcon from '../assets/icons/rxjs.ico';
+import ngrxIcon from '../assets/icons/ngrx.svg';
 
 const arraySkills = [
   {
@@ -65,8 +67,18 @@ const arraySkills = [
     type: 'library',
   },
   {
+    name: 'Angular',
+    icon: angularIcon,
+    type: 'library',
+  },
+  {
     name: 'Redux/Toolkit',
     icon: reduxIcon,
+    type: 'library',
+  },
+  {
+    name: 'NgRx',
+    icon: ngrxIcon,
     type: 'library',
   },
   {
@@ -75,10 +87,11 @@ const arraySkills = [
     type: 'library',
   },
   {
-    name: 'Axios',
-    icon: axiosIcon,
+    name: 'RxJS',
+    icon: rxjsIcon,
     type: 'library',
   },
+
   {
     name: 'Styled-components',
     icon: styledIcon,

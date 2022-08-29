@@ -12,7 +12,7 @@ const Skills = () => {
 
       <ContentWrapper>
         <Skill title="Languages" type="language" />
-        <Skill title="Libraries" type="library" />
+        <Skill title="Frameworks And Libraries" type="library" />
         <Skill title="Styles" type="style" />
         <Skill title="Tools" type="tool" />
       </ContentWrapper>
@@ -43,7 +43,15 @@ const ContentWrapper = styled.div`
   @media screen and (max-width: 768px) {
     gap: 25px;
   }
-`;
 
+  @media screen and (min-width: 1124px) {
+    display: flex;
+justify-content: space-evenly;
+    & article:nth-child(2) div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+`;
 
 export default Skills;

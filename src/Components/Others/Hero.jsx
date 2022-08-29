@@ -12,14 +12,24 @@ const Hero = () => {
         </h1>
 
         <p>
+          I’m a front-end developer with a passion for creating beautiful and functional user interfaces using new
+          tools. In this portfolio, You'll find a collection of some of my projects and skills, there is a live demo and
+          source code of each project. If you want to know more about me, you can find me on{' '}
+          <a href="https://github.com/mouhametnd">
+            <GreenSpan>Github</GreenSpan>
+          </a>
+          <span className='span-separator'>
+          or
+            </span> 
 
-          I’m a frontend developer with a passion for creating beautiful and functional user interfaces using new tools. In this portfolio, You'll finde a collection of some of my projects, there is a live demo and  source code of each project. If you want to know more about me, you can find me on <GreenSpan>Github</GreenSpan> or <GreenSpan>Linkedin</GreenSpan>. 
+          <a href="https://www.linkedin.com/in/mouhametnd/">
+            <GreenSpan>Linkedin</GreenSpan>.
+          </a>
         </p>
-
 
         <FindMe />
       </ContentWrapper>
-        <Img src={portalBg} />
+      <Img src={portalBg} />
     </RootWrapper>
   );
 };
@@ -37,16 +47,25 @@ const RootWrapper = styled.section`
     max-width: 600px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  & .span-separator{
+    margin: 0 10px;
+  }
+
   & p {
     padding: 0px;
     margin: 0px;
     padding-block: 20px;
     color: var(--secondaryBlack);
-    font-size: clamp(.9rem, 3.2vw, 1.18rem);
+    font-size: clamp(0.9rem, 3.2vw, 1.18rem);
     font-family: var(--secondaryFont);
     max-width: 800px;
     line-height: 155%;
     letter-spacing: 0.6px;
+
   }
 `;
 
@@ -60,7 +79,6 @@ const Img = styled.img`
     max-width: 600px;
     max-height: 400px;
     border-radius: 10px;
-
   }
 `;
 

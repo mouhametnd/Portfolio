@@ -4,6 +4,7 @@ import githubImage from '../assets/images/github-dev-finder-img.webp';
 import memoryImage from '../assets/images/memory-game-img.webp';
 import pomodoroImage from '../assets/images/pomodoro-app-img.webp';
 import inMarkdownImage from '../assets/images/in-browser-markdown-editor-img.webp';
+import productFbImage from '../assets/images/product-feedback-img.png';
 
 import gamesGif from '../assets/gifs/games-app-gif.webp';
 import moviesGif from '../assets/gifs/movies-app-gif.webp';
@@ -11,13 +12,14 @@ import githubGif from '../assets/gifs/github-dev-finder-gif.webp';
 import memoryGif from '../assets/gifs/memory-game-gif.webp';
 import pomodoroGif from '../assets/gifs/pomodoro-app-gif.webp';
 import inMarkdownGif from '../assets/gifs/in-browser-markdown-editor-gif.gif';
+import productFbGif from '../assets/gifs/product-feedback-gif.gif';
 
-'which you can use to write markdown and preview it in the browser, there are some interesting interactions.'
+('which you can use to write markdown and preview it in the browser, there are some interesting interactions.');
 
 const arrayProjects = [
   {
     id: 1,
-    title: 'In-browser markdown editor App',
+    title: 'In-browser markdown editor Web App',
     description:
       'This is an in-browser markdown editor, which allow user to write markdown, preview it in the browser, create, delete, update, copy, download files etc.',
     technologies: ['TypeScript', 'React.js', 'Tailwind CSS', 'Redux Toolkit'],
@@ -38,6 +40,16 @@ const arrayProjects = [
   },
   {
     id: 3,
+    title: 'Product Feedback Web App',
+    technologies: ['Angular', 'RxJs', 'NgRx', 'Tailwind CSS'],
+    description: 'This is a Product Feedback web app with many interactions that the user can play with.',
+    github: 'https://github.com/mouhametnd/angular-product-feedback-app',
+    liveDemo: 'https://mouhametnd-product-feedback.netlify.app/#/',
+    image: productFbImage,
+    gif: productFbGif,
+  },
+  {
+    id: 4,
     title: 'Movies Web App',
     description:
       'A movies app that allows users to search, filter and add games as a favourite, watch and watch later using JavaScript and an API.',
@@ -48,7 +60,7 @@ const arrayProjects = [
     gif: moviesGif,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Github Dev Finder',
     description: 'A web app that allows users to search for Github users with an autocomplete search.',
     technologies: ['React.js', 'styled-components'],
@@ -58,7 +70,7 @@ const arrayProjects = [
     gif: githubGif,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Pomodoro Web App',
     description:
       'A Pomodoro web app that allows users to start, pause and cancel many timers. With a custom set of colours and fonts for the app.',
@@ -67,17 +79,6 @@ const arrayProjects = [
     liveDemo: 'https://mouhametnd-pomodoro.netlify.app/',
     image: pomodoroImage,
     gif: pomodoroGif,
-  },
-  {
-    id: 5,
-    title: 'Memory Game',
-    description:
-      'A memory game that allows users to play with cards and try to find matching pairs. With a custom set of players, the number of grids and the icons or numbers to match.',
-    technologies: ['JavaScript', 'SASS/SCSS'],
-    github: 'https://github.com/mouhametnd/Games-Web-App',
-    liveDemo: 'https://mouhametnd-memory-game.netlify.app/',
-    image: memoryImage,
-    gif: memoryGif,
   },
 ];
 
