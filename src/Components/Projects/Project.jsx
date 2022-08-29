@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoints from '../../constants/breakpoints';
 import SmallBox from '../Others/SmallBox';
-
 const { tablet } = breakpoints;
+
 
 const Project = ({ id, title, description, technologies, github, liveDemo, image, gif }) => {
   const handleMouseOver = ({ currentTarget }) => (currentTarget.querySelector('img').src = gif);
