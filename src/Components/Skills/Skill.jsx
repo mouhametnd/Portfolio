@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import arraySkills from '../../constants/arraySkills';
 import filteredByType from '../../functions/filteredByType';
 
 const Skill = ({ title, type }) => {
@@ -27,10 +26,15 @@ const RootWrapper = styled.article`
   }
 `;
 
-const ContentWrapper = styled.div`
+const ContentWrapper = styled.ul`
   display: flex;
   flex-flow: column;
   gap: 20px;
+  padding: 0px;
+  margin: 0px;
+
+  width: max-content;
+  margin-inline: auto;
 
   & .smallbox {
     display: grid;

@@ -46,8 +46,8 @@ const ContentWrapper = styled.div`
 
   @media screen and (min-width: 1124px) {
     display: flex;
-justify-content: space-evenly;
-    & article:nth-child(2) div {
+    justify-content: space-evenly;
+    & article:nth-child(2) ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
