@@ -1,16 +1,13 @@
 import gamesImage from '../assets/images/games-app-img.webp';
 import moviesImage from '../assets/images/movies-app-img.webp';
 import githubImage from '../assets/images/github-dev-finder-img.webp';
-import memoryImage from '../assets/images/memory-game-img.webp';
-import pomodoroImage from '../assets/images/pomodoro-app-img.webp';
+import modernWebsiteImg from '../assets/images/modern-website.png';
 import inMarkdownImage from '../assets/images/in-browser-markdown-editor-img.webp';
 import productFbImage from '../assets/images/product-feedback-img.png';
 
 import gamesGif from '../assets/gifs/games-app-gif.webp';
 import moviesGif from '../assets/gifs/movies-app-gif.webp';
 import githubGif from '../assets/gifs/github-dev-finder-gif.webp';
-import memoryGif from '../assets/gifs/memory-game-gif.webp';
-import pomodoroGif from '../assets/gifs/pomodoro-app-gif.webp';
 import inMarkdownGif from '../assets/gifs/in-browser-markdown-editor-gif.gif';
 import productFbGif from '../assets/gifs/product-feedback-gif.gif';
 
@@ -71,14 +68,14 @@ const arrayProjects = [
   },
   {
     id: 6,
-    title: 'Pomodoro Web App',
+    title: 'Modern Website',
     description:
-      'A Pomodoro web app that allows users to start, pause and cancel many timers. With a custom set of colours and fonts for the app.',
-    technologies: ['JavaScript', 'Gulp', 'SASS/SCSS'],
-    github: 'https://github.com/mouhametnd/Pomodoro-App',
-    liveDemo: 'https://mouhametnd-pomodoro.netlify.app/',
-    image: pomodoroImage,
-    gif: pomodoroGif,
+      'A modern website focused on UI/UX, animations, and interactions.',
+    technologies: ['React', 'Styled-components',  'SCSS/SASS',],
+    github: 'https://github.com/mouhametnd/future-fasanara',
+    liveDemo: 'https://mouhametnd-fasanara.netlify.app/',
+    image: modernWebsiteImg,
+    gif: modernWebsiteImg,
   },
 ];
 
