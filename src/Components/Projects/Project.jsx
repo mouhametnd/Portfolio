@@ -16,7 +16,7 @@ const Project = ({ id, title, description, technologies, github, liveDemo, image
       <MainWrapper>
         <h3>{title}</h3>
         <p>{description}</p>
-        <h4>Technologies</h4>
+        <h4>Technologies used</h4>
         <Ul>
           {technologies.map(tech => (
             <SmallBox key={tech + id}>

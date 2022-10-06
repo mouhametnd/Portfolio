@@ -36,7 +36,7 @@ const backendSkills = {
   },
 
   libraries: {
-    title: 'Libraries',
+    title: 'Libraries And Tools',
     skills: [
       { name: 'JWT-token', icon: jwtIcon },
       { name: 'Mongoose', icon: mongooseIcon },
