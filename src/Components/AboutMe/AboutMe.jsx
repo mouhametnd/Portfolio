@@ -6,8 +6,7 @@ import H2Section from '../Others/H2Section';
 import PSection from '../Others/PSection';
 import meImage from '../../assets/images/me.webp';
 
-const { tablet } = breakpoints;
-
+const { md, sm } = breakpoints;
 
 const AboutMe = () => {
   return (
@@ -17,7 +16,10 @@ const AboutMe = () => {
       <MainWrapper>
         <ContentWrapper>
           <PSection>
-            A frontend developer who enjoys tech in general, a hard worker and a self-motivated person. Currently open to new opportunities.
+            I’m a passionate self-taught full-stack web developer. I love to build things that live on the internet,
+            with a focus on creating scalable and beautiful web applications. I specialize in building (and occasionally
+            designing) websites and applications. I take great care in the experience, architecture, and code quality of
+            the things I build. I’m currently available for work.
           </PSection>
           <FindMe />
         </ContentWrapper>
@@ -35,7 +37,6 @@ const MainWrapper = styled.div`
   display: grid;
   gap: 20px;
 
-
   & img {
     padding-top: 10px;
     width: 100%;
@@ -48,9 +49,19 @@ const MainWrapper = styled.div`
     overflow: hidden;
   }
 
-  @media screen and (min-width: ${tablet}) {
+  @media screen and (min-width: ${md}) {
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
+  }
+  @media screen and (max-width: 450px) {
+    & img {
+      margin-top: 100px;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    & img {
+      margin-top: 150px;
+    }
   }
 `;
 
@@ -69,6 +80,13 @@ const ContentWrapper = styled.div`
 
   & p {
     text-align: left;
+
+  }
+
+  @media screen and (max-width: 450px) {
+    & p {
+      margin-bottom: 30px;
+    }
   }
 `;
 

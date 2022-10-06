@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import filteredByType from '../../functions/filteredByType';
+import SmallBox from '../Others/SmallBox';
 
-const Skill = ({ title, type }) => {
+const Skill = ({ title, skills }) => {
   return (
     <RootWrapper>
       <h4>{title}</h4>
 
-      <ContentWrapper>{filteredByType(type)}</ContentWrapper>
+      <ContentWrapper>
+        {skills.map(({ icon, name }) => (
+          <SmallBox key={icon + name}>
+            <img src={icon} alt={name} loading="lazy" />
+            <span> {name}</span>
+          </SmallBox>
+        ))}
+      </ContentWrapper>
     </RootWrapper>
   );
 };
@@ -16,7 +23,7 @@ const RootWrapper = styled.article`
   width: max-content;
 
   & h4 {
-    color: var( --lightBlack);
+    color: var(--lightBlack);
     font-family: var(--primaryFont);
     padding-right: 10px;
     letter-spacing: 0.7px;

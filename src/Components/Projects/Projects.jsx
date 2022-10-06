@@ -5,7 +5,7 @@ import PSection from '../Others/PSection';
 import Project from './Project';
 import arrayProjects from '../../constants/arrayProjects';
 import breakpoints from '../../constants/breakpoints';
-const {desktop}=breakpoints
+const {xxl}=breakpoints
 
 const Projects = () => {
   return (
@@ -40,7 +40,7 @@ const ProjectsWrapper = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
 
-  @media screen and (min-width: ${desktop} ) {
+  @media screen and (min-width: ${xxl} ) {
     grid-template-columns: repeat(3, 1fr);
   }
 `;

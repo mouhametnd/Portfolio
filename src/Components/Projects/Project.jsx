@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoints from '../../constants/breakpoints';
 import SmallBox from '../Others/SmallBox';
-const { tablet } = breakpoints;
+const { md } = breakpoints;
 
 
 const Project = ({ id, title, description, technologies, github, liveDemo, image, gif }) => {
@@ -51,7 +51,7 @@ const RootWrapper = styled.article`
     height: 100%;
     max-width: 400px;
     height: 200px;
-    @media screen and (min-width: ${tablet}) {
+    @media screen and (min-width: ${md}) {
       height: 220px;
     }
   }

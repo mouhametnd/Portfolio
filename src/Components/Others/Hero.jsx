@@ -8,23 +8,12 @@ const Hero = () => {
     <RootWrapper id="home">
       <ContentWrapper>
         <h1>
-          Hi, I’m <GreenSpan>Mouhamet Ndiaye</GreenSpan> a Frontend Developer
+          Hi, I’m <GreenSpan>Mouhamet Ndiaye</GreenSpan> a Full-stack Developer
         </h1>
 
         <p>
-          I’m a front-end developer with a passion for creating beautiful and functional user interfaces using new
-          tools. In this portfolio, You'll find a collection of some of my projects and skills, there is a live demo and
-          source code of each project. If you want to know more about me, you can find me on{' '}
-          <a href="https://github.com/mouhametnd">
-            <GreenSpan>Github</GreenSpan>
-          </a>
-          <span className='span-separator'>
-          or
-            </span> 
-
-          <a href="https://www.linkedin.com/in/mouhametnd/">
-            <GreenSpan>Linkedin</GreenSpan>.
-          </a>
+          A full-stack developer who loves to overcome himself through learning new technologies and building things
+          that live on the internet.
         </p>
 
         <FindMe />
@@ -51,7 +40,7 @@ const RootWrapper = styled.section`
     text-decoration: none;
   }
 
-  & .span-separator{
+  & .span-separator {
     margin: 0 10px;
   }
 
@@ -63,9 +52,8 @@ const RootWrapper = styled.section`
     font-size: clamp(0.9rem, 3.2vw, 1.18rem);
     font-family: var(--secondaryFont);
     max-width: 800px;
-    line-height: 155%;
+    line-height: 160%;
     letter-spacing: 0.6px;
-
   }
 `;
 

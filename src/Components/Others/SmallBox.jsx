@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import breakpoints from '../../constants/breakpoints';
-const { tablet } = breakpoints;
+const { md } = breakpoints;
 
 const SmallBox = ({ children, dataTitle }) => <SmallBoxWrapper children={children} data-title={dataTitle} className="smallbox"/>;
 
@@ -15,7 +15,7 @@ const SmallBoxWrapper = styled.li`
   background: var(--whiteBoxGradient);
   box-shadow: var(--whiteShadow);
 
-  @media screen and (min-width: ${tablet}) {
+  @media screen and (min-width: ${md}) {
     padding: 17px;
   }
 `;

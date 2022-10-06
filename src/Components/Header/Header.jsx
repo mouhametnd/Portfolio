@@ -6,7 +6,7 @@ import breakpoints from '../../constants/breakpoints';
 import AsideNav from './AsideNav';
 import NavBar from './NavBar';
 
-const { laptop } = breakpoints;
+const { xl } = breakpoints;
 const Header = () => {
   const [isOpenAsideNav, setIsOpenAsideNav] = useState(false);
   const state = { isOpenAsideNav, setIsOpenAsideNav };
@@ -33,7 +33,7 @@ const HeaderWrapper = styled.header`
   background-color: var(--primaryBg);
   box-shadow: 0px 2px 50px #8888;
 
-  @media screen and (min-width: ${laptop}) {
+  @media screen and (min-width: ${xl}) {
     & .hamburger {
       display: none;
     }
@@ -44,7 +44,7 @@ const HeaderWrapper = styled.header`
 
 const NavBarWrapper = styled.div`
   display: none;
-  @media screen and (min-width: ${laptop}) {
+  @media screen and (min-width: ${xl}) {
     display: flex;
     height: max-content;
     width: max-content;

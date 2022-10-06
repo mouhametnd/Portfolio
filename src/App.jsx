@@ -4,8 +4,9 @@ import Header from './Components/Header/Header';
 import Hero from './Components/Others/Hero';
 import Projects from './Components/Projects/Projects';
 import HrElement from './Components/Others/HrElement';
-import Skills from './Components/Skills/Skills';
 import AboutMe from './Components/AboutMe/AboutMe';
+import FrontendSkills from './Components/Skills/FrontendSkills';
+import BackendSkills from './Components/Skills/BackendSkills';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
         <HrElement />
         <Projects />
         <HrElement />
-        <Skills />
+        <FrontendSkills/>
+        <HrElement />
+        <BackendSkills/>
         <HrElement />
         <AboutMe />
       </Wrapper>

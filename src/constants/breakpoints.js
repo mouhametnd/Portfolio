@@ -1,7 +1,8 @@
 const breakpoints = {
-  mobile: '320px',
-  tablet: '768px',
-  laptop: '1024px',
-  desktop: '1280px',
+  xs: '320px',
+  sm: '400px',
+  md: '768px',
+  xl: '1024px',
+  xxl: '1280px',
 };
 export default breakpoints;

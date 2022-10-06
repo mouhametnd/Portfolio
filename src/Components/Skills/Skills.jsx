@@ -4,17 +4,16 @@ import H2Section from '../Others/H2Section';
 import PSection from '../Others/PSection';
 import Skill from './Skill';
 
-const Skills = () => {
+const Skills = ({ title, description, skillsValues }) => {
   return (
     <RootWrapper id="skills">
-      <H2Section children={'Skills'} />
-      <PSection>These are some tools that I can work with.</PSection>
+      <H2Section children={title} />
+      <PSection>{description}</PSection>
 
-      <ContentWrapper>
-        <Skill title="Languages" type="language" />
-        <Skill title="Frameworks And Libraries" type="library" />
-        <Skill title="Styles" type="style" />
-        <Skill title="Tools" type="tool" />
+      <ContentWrapper isFrontendSkills={title === 'Frontend Skills'}>
+        {skillsValues.map((value, i) => (
+          <Skill {...value} key={i} />
+        ))}
       </ContentWrapper>
     </RootWrapper>
   );
@@ -47,10 +46,14 @@ const ContentWrapper = styled.div`
   @media screen and (min-width: 1124px) {
     display: flex;
     justify-content: space-evenly;
-    & article:nth-child(2) ul {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+    ${({ isFrontendSkills }) => {
+      return (
+        isFrontendSkills &&
+        `& article:nth-child(2) ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)`
+      );
+    }}
   }
 `;
 

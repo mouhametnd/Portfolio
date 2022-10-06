@@ -1,19 +1,30 @@
 import gamesImage from '../assets/images/games-app-img.webp';
 import moviesImage from '../assets/images/movies-app-img.webp';
-import githubImage from '../assets/images/github-dev-finder-img.webp';
+import blogImage from '../assets/images/blog-app-img.webp';
 import modernWebsiteImg from '../assets/images/modern-website.png';
 import inMarkdownImage from '../assets/images/in-browser-markdown-editor-img.webp';
 import productFbImage from '../assets/images/product-feedback-img.png';
 
 import gamesGif from '../assets/gifs/games-app-gif.webp';
 import moviesGif from '../assets/gifs/movies-app-gif.webp';
-import githubGif from '../assets/gifs/github-dev-finder-gif.webp';
+import blogGif from '../assets/gifs/blog-app-gif.webp';
 import inMarkdownGif from '../assets/gifs/in-browser-markdown-editor-gif.gif';
 import productFbGif from '../assets/gifs/product-feedback-gif.gif';
 
 ('which you can use to write markdown and preview it in the browser, there are some interesting interactions.');
 
 const arrayProjects = [
+
+  {
+    id: 5,
+    title: 'Full-stack Blog App',
+    description: 'This is a complete full-stack project focused on the backend that includes a complete frontend and backend built by myself.',
+    technologies: ['Nodejs', 'Express', 'MongoDB', 'React', 'Redux', 'Typescript', 'Tailwindcss'],
+    github: 'https://github.com/mouhametnd/fullstack-blog-app',
+    liveDemo: 'https://mouhametnd-blog-app.netlify.app',
+    image: blogImage,
+    gif: blogGif,
+  },
   {
     id: 1,
     title: 'In-browser markdown editor Web App',
@@ -55,16 +66,6 @@ const arrayProjects = [
     liveDemo: 'https://mouhametnd-movies-app.netlify.app/',
     image: moviesImage,
     gif: moviesGif,
-  },
-  {
-    id: 5,
-    title: 'Github Dev Finder',
-    description: 'A web app that allows users to search for Github users with an autocomplete search.',
-    technologies: ['React.js', 'styled-components'],
-    github: 'https://mouhametnd-games-app.netlify.app/',
-    liveDemo: 'https://github.com/mouhametnd/React-Github-Dev-Finder-Web-App',
-    image: githubImage,
-    gif: githubGif,
   },
   {
     id: 6,
